@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f0f0f;
+  color: white;
+}
+
+/* MENU */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #000;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #25d366;
+}
+
+/* HERO */
+header {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(135deg, #000, #1b1b1b);
+}
+
+header h1 {
+  font-size: 52px;
+  margin-bottom: 20px;
+}
+
+header p {
+  font-size: 20px;
+  color: #ccc;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 30px;
+  background: #25d366;
+  color: black;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #25d366;
+}
+
+/* SEÇÕES */
+section {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+section h2 {
+  font-size: 34px;
+  margin-bottom: 20px;
+}
+
+section p {
+  max-width: 700px;
+  margin: auto;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 25px;
+  border-radius: 12px;
+  width: 280px;
+  transition: 0.3s;
+  border: 1px solid #222;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: #25d366;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.3);
+}
+
+
+/* ANIMAÇÃO SUAVE */
+section {
+  animation: aparecer 1s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+  color: #888;
+  font-size: 14px;
+}
+
+
+/* AJUSTE PROFISSIONAL */
+header,
+section {
+  max-width: 1100px;
+  margin: auto;
+}
+
+body {
+  line-height: 1.6;
+}
+
+
+/* RESPONSIVO CELULAR */
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  header p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
