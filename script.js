@@ -1,9 +1,8 @@
 function toggleMenu() {
-  const menu = document.querySelector("nav ul");
+  const menu = document.getElementById("menu");
   menu.classList.toggle("active");
 }
 
-// CARROSSEL AUTOMÁTICO
 const images = document.querySelectorAll(".carousel img");
 let current = 0;
 

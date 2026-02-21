@@ -11,9 +11,11 @@ body {
 }
 
 /* NAV */
+
 nav {
   padding: 20px;
   border-bottom: 1px solid #111;
+  position: relative;
 }
 
 nav ul {
@@ -33,7 +35,14 @@ nav a:hover {
   color: #00c853;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
 /* HERO */
+
 .hero {
   display: flex;
   align-items: center;
@@ -54,18 +63,19 @@ nav a:hover {
 
 .destaque {
   margin-top: 15px;
-  color: #ffffff;
   font-weight: bold;
 }
 
 /* CAROUSEL */
+
 .carousel {
   position: relative;
-  width: 420px;
-  height: 300px;
+  width: 500px;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
-  border-radius: 12px;
-  box-shadow: 0 0 25px rgba(0, 200, 83, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 200, 83, 0.3);
 }
 
 .carousel img {
@@ -82,12 +92,13 @@ nav a:hover {
 }
 
 /* BOTÃO */
+
 .btn {
   display: inline-block;
   margin-top: 20px;
   padding: 14px 28px;
   background: #00c853;
-  color: #000;
+  color: black;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
@@ -98,7 +109,8 @@ nav a:hover {
   background: #00a844;
 }
 
-/* SECTIONS */
+/* SEÇÕES */
+
 section {
   padding: 80px 20px;
   text-align: center;
@@ -126,6 +138,7 @@ section {
 }
 
 /* FOOTER */
+
 footer {
   padding: 30px;
   border-top: 1px solid #111;
@@ -137,7 +150,25 @@ footer strong {
 }
 
 /* RESPONSIVO */
+
 @media (max-width: 768px) {
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    text-align: right;
+  }
+
   .hero {
     flex-direction: column;
     text-align: center;
@@ -145,6 +176,5 @@ footer strong {
 
   .carousel {
     width: 100%;
-    height: 250px;
   }
 }
