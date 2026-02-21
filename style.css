@@ -11,7 +11,6 @@ body {
 }
 
 /* NAV */
-
 nav {
   padding: 20px;
   border-bottom: 1px solid #111;
@@ -42,7 +41,6 @@ nav a:hover {
 }
 
 /* HERO */
-
 .hero {
   display: flex;
   align-items: center;
@@ -67,19 +65,21 @@ nav a:hover {
 }
 
 /* CAROUSEL */
-
 .carousel {
   position: relative;
-  width: 500px;
-  max-width: 100%;
-  aspect-ratio: 16 / 9;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 0 30px rgba(0, 200, 83, 0.3);
+  margin: 0 auto;
 }
 
 .carousel img {
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -92,7 +92,6 @@ nav a:hover {
 }
 
 /* BOTÃO */
-
 .btn {
   display: inline-block;
   margin-top: 20px;
@@ -110,7 +109,6 @@ nav a:hover {
 }
 
 /* SEÇÕES */
-
 section {
   padding: 80px 20px;
   text-align: center;
@@ -138,7 +136,6 @@ section {
 }
 
 /* FOOTER */
-
 footer {
   padding: 30px;
   border-top: 1px solid #111;
@@ -150,7 +147,6 @@ footer strong {
 }
 
 /* RESPONSIVO */
-
 @media (max-width: 768px) {
 
   nav ul {
@@ -175,6 +171,6 @@ footer strong {
   }
 
   .carousel {
-    width: 100%;
+    height: 220px;
   }
 }
