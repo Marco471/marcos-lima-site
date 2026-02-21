@@ -3,27 +3,14 @@ function toggleMenu() {
   menu.classList.toggle("active");
 }
 
-const cards = document.querySelectorAll(".card");
+// CARROSSEL AUTOMÁTICO
+const images = document.querySelectorAll(".carousel img");
+let current = 0;
 
-cards.forEach(card => {
-  card.addEventListener("click", () => {
-    cards.forEach(c => c.classList.remove("active"));
-    card.classList.add("active");
-  });
-});
-
-const elements = document.querySelectorAll(".fade-in");
-
-function showOnScroll() {
-  const triggerBottom = window.innerHeight * 0.85;
-
-  elements.forEach(el => {
-    const boxTop = el.getBoundingClientRect().top;
-    if (boxTop < triggerBottom) {
-      el.classList.add("show");
-    }
-  });
+function changeImage() {
+  images[current].classList.remove("active");
+  current = (current + 1) % images.length;
+  images[current].classList.add("active");
 }
 
-window.addEventListener("scroll", showOnScroll);
-window.addEventListener("load", showOnScroll);
+setInterval(changeImage, 4000);

@@ -34,20 +34,51 @@ nav a:hover {
 }
 
 /* HERO */
-header {
-  text-align: center;
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
   padding: 100px 20px;
+  flex-wrap: wrap;
 }
 
-header h1 {
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
   font-size: 32px;
   margin-bottom: 20px;
 }
 
 .destaque {
   margin-top: 15px;
-  color: #ffffff; /* Agora branco */
+  color: #ffffff;
   font-weight: bold;
+}
+
+/* CAROUSEL */
+.carousel {
+  position: relative;
+  width: 420px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 200, 83, 0.3);
+}
+
+.carousel img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+  opacity: 1;
 }
 
 /* BOTÃO */
@@ -73,11 +104,6 @@ section {
   text-align: center;
 }
 
-h2 {
-  margin-bottom: 20px;
-}
-
-/* CARDS */
 .cards {
   display: flex;
   justify-content: center;
@@ -92,17 +118,11 @@ h2 {
   width: 260px;
   border-radius: 12px;
   border: 2px solid transparent;
-  cursor: pointer;
   transition: 0.3s;
 }
 
 .card:hover {
   border: 2px solid #00c853;
-}
-
-.card.active {
-  border: 2px solid #00c853;
-  box-shadow: 0 0 20px rgba(0, 200, 83, 0.6);
 }
 
 /* FOOTER */
@@ -116,44 +136,15 @@ footer strong {
   color: #00c853;
 }
 
-/* ANIMAÇÃO */
-.fade-in {
-  opacity: 0;
-  transform: translateY(30px);
-  transition: 0.8s ease;
-}
-
-.fade-in.show {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* MENU MOBILE */
-.menu-toggle {
-  display: none;
-  font-size: 24px;
-  cursor: pointer;
-}
-
+/* RESPONSIVO */
 @media (max-width: 768px) {
-  nav ul {
-    display: none;
+  .hero {
     flex-direction: column;
     text-align: center;
-    margin-top: 20px;
   }
 
-  nav ul.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-    text-align: right;
-  }
-
-  .cards {
-    flex-direction: column;
-    align-items: center;
+  .carousel {
+    width: 100%;
+    height: 250px;
   }
 }
