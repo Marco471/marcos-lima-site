@@ -37,8 +37,8 @@ Este repositório contém o código-fonte do site profissional de **Marcos Lima*
 
 ## 📧 Contato
 - **Autor:** Marcos Lima  
-- **LinkedIn:** [linkedin.com/in/marcos-lima](https://linkedin.com/in/marcos-lima)  
-- **E-mail:** seuemail@exemplo.com  
+- **LinkedIn:** [https://www.linkedin.com/in/marcosdelima-ti](https://www.linkedin.com/in/marcosdelima-ti)  
+- **E-mail:** [marcosww.15@gmail.com](mailto:marcosww.15@gmail.com)  
 
 ---
 
