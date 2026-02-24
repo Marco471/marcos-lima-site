@@ -33,5 +33,12 @@ Este repositório contém o código-fonte do site profissional de **Marcos Lima*
 2. Crie uma branch para sua modificação:  
    ```bash
    git checkout -b minha-modificacao
-   
+
+   git commit -m "Minha contribuição"
+
+   git push origin minha-modificacao
+📧 Contato
+• 	Autor: Marcos Lima
+• 	LinkedIn:  (linkedin.com in Bing)
+• 	E-mail: marcosww.15@gmail.com
    
