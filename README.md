@@ -1,0 +1,45 @@
+# 🌐 Site Profissional - Marcos Lima
+
+Este repositório contém o código-fonte do site profissional de **Marcos Lima**, desenvolvido com foco em performance, responsividade e otimização para mecanismos de busca (SEO).
+
+## 🚀 Tecnologias Utilizadas
+- **HTML5** → Estrutura das páginas
+- **CSS3** → Estilização e design responsivo
+- **JavaScript (ES6)** → Funcionalidades dinâmicas (carrossel e interações)
+- **Vercel** → Hospedagem principal
+- **GitHub Pages** → Deploy alternativo
+
+## 📂 Estrutura do Projeto
+- `index.html` → Página inicial
+- `criacao-de-sites-santo-andre.html` → Página estratégica
+- `style.css` → Estilos e responsividade
+- `script.js` → Lógica do carrossel
+- `images/` → Pasta de imagens
+- `sitemap.xml` → Sitemap para SEO
+- `google1803ca04924b645e.html` → Verificação Google
+- `README.md` → Documentação do projeto
+
+## 🌍 Deploy
+- [Versão online no Vercel](https://marcos-lima-site.vercel.app)  
+- [Versão no GitHub Pages](https://marco471.github.io/marcos-lima-site)
+
+## 📈 Status
+- Últimas atualizações: correções de responsividade e carrossel
+- SEO otimizado com sitemap e verificação Google
+- Projeto em constante evolução
+
+## 📌 Como Contribuir
+1. Faça um fork do repositório
+2. Crie uma branch para sua modificação (`git checkout -b minha-modificacao`)
+3. Commit suas alterações (`git commit -m 'Minha contribuição'`)
+4. Faça push para a branch (`git push origin minha-modificacao`)
+5. Abra um Pull Request
+
+## 📧 Contato
+- **Autor:** Marcos Lima  
+- **LinkedIn:** [linkedin.com/in/marcos-lima](https://linkedin.com/in/marcos-lima)  
+- **E-mail:** seuemail@exemplo.com  
+
+---
+
+✨ *Este projeto foi criado para apresentar serviços profissionais e destacar presença digital estratégica.*
