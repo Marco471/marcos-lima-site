@@ -341,7 +341,7 @@ nav a:hover {
 
   max-width: 420px;
 
-  height: 460px;
+  aspect-ratio: 9 / 16;
 
   overflow: hidden;
 
@@ -375,6 +375,8 @@ nav a:hover {
   height: 100%;
 
   object-fit: cover;
+
+  border-radius: 28px;
 
   opacity: 0;
 
@@ -647,7 +649,9 @@ footer strong {
 
   .carousel {
 
-    height: 360px;
+    max-width: 340px;
+
+    width: 100%;
   }
 }
 
@@ -703,7 +707,9 @@ footer strong {
 
   .carousel {
 
-    height: 300px;
+    max-width: 340px;
+
+    width: 100%;
   }
 
   section {
@@ -721,6 +727,7 @@ footer strong {
     font-size: 17px;
   }
 }
+
 
 
 
