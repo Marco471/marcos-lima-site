@@ -1,112 +1,215 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Criação de Sites Profissionais em Santo André | Marcos Lima</title>
+  <title>Marcos Lima • Landing Pages e PWAs</title>
 
   <meta name="description"
-    content="Criação de sites em Santo André e ABC Paulista. Sites profissionais, rápidos e estratégicos para empresas que querem aparecer no Google e gerar mais clientes.">
-
-  <meta name="robots" content="index, follow">
+    content="Landing pages, PWAs e experiências digitais modernas para negócios que querem presença profissional online.">
 
   <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-<nav>
-  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-  <ul id="menu">
-    <li><a href="#inicio">Início</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#servicos">Serviços</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-</nav>
+  <!-- NAVBAR -->
 
-<header id="inicio" class="hero">
-  <div class="hero-text">
-    <h1>Criação de Sites Profissionais em Santo André</h1>
+  <nav>
+
+    <div class="logo-nav">
+      ML<span>↗</span>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+      ☰
+    </div>
+
+    <ul id="menu">
+      <li><a href="#inicio">Início</a></li>
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#pwa">PWA</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <header id="inicio" class="hero">
+
+    <div class="hero-text">
+
+      <h1 class="logo-title">
+        Marcos Lima
+        <span>↗</span>
+      </h1>
+
+      <p class="hero-description">
+
+        <span class="text-light">
+          Landing pages,
+        </span>
+
+        <span class="text-green">
+          PWAs
+        </span>
+
+        <span class="text-light">
+          e experiências digitais modernas
+          para negócios que querem presença profissional online.
+        </span>
+
+      </p>
+
+      <p class="hero-destaque">
+
+        <span class="text-green">
+          Desenvolvimento
+        </span>
+
+        focado em performance,
+        experiência do usuário e visual premium no celular.
+
+      </p>
+
+    </div>
+
+    <!-- CAROUSEL -->
+
+    <div class="carousel">
+
+      <img src="images/hero1.jpg"
+        class="active"
+        alt="Desenvolvimento web">
+
+      <img src="images/hero2.jpg"
+        alt="PWA moderno">
+
+      <img src="images/hero3.jpg"
+        alt="Landing page premium">
+
+    </div>
+
+  </header>
+
+  <!-- SOBRE -->
+
+  <section id="sobre" class="reveal">
+
+    <h2>Experiências Digitais</h2>
 
     <p>
-      Sites modernos, rápidos e estratégicos para empresas que querem crescer,
-      aparecer no Google e conquistar mais clientes.
+      Desenvolvimento de landing pages modernas,
+      PWAs e interfaces focadas em presença profissional,
+      performance e experiência premium no celular.
     </p>
 
-    <p class="destaque">
-      Desenvolvimento focado em performance, experiência do usuário e resultados reais.
+  </section>
+
+  <!-- PROJETOS -->
+
+  <section id="projetos" class="reveal">
+
+    <h2>Projetos</h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>Landing Pages</h3>
+
+        <p>
+          Páginas modernas com foco em identidade visual,
+          conversão e experiência premium.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>PWAs</h3>
+
+        <p>
+          Aplicações web modernas com experiência próxima
+          de aplicativos nativos.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>Cartões Interativos</h3>
+
+        <p>
+          Soluções digitais modernas com WhatsApp,
+          links rápidos e presença online profissional.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PWA -->
+
+  <section id="pwa" class="reveal">
+
+    <h2>PWA ou App Nativo?</h2>
+
+    <p>
+      Nem todo projeto precisa de aplicativo nativo.
+      PWAs oferecem velocidade, instalação simples
+      e experiência moderna diretamente pelo navegador.
     </p>
 
-    <a class="btn" href="https://wa.me/5511991882423" target="_blank">
-      Solicitar Orçamento
+  </section>
+
+  <!-- CONTATO -->
+
+  <section id="contato" class="reveal">
+
+    <h2>Vamos criar algo moderno?</h2>
+
+    <a class="whatsapp-link"
+      href="https://wa.me/5511991882423"
+      target="_blank">
+
+      Falar no WhatsApp ↗
+
     </a>
-  </div>
 
-  <div class="carousel">
-    <img src="images/hero1.jpg" class="active" alt="Desenvolvimento web">
-    <img src="images/hero2.jpg" alt="Programação">
-    <img src="images/hero3.jpg" alt="Criação de sites">
-  </div>
-</header>
+  </section>
 
-<section id="sobre">
-  <h2>Sobre</h2>
-  <p>
-    Atuo no desenvolvimento de sites profissionais em Santo André e região do ABC Paulista,
-    criando projetos modernos, rápidos e preparados para gerar credibilidade e novos clientes.
-  </p>
+  <!-- FOOTER -->
 
-  <p>
-    Cada site é pensado estrategicamente para posicionar sua empresa no Google
-    e transmitir confiança desde o primeiro acesso.
-  </p>
-</section>
+  <footer>
 
-<section id="servicos">
-  <h2>Serviços</h2>
+    <p>
+      © 2026 • Todos os direitos reservados
+    </p>
 
-  <div class="cards">
-    <div class="card">
-      <h3>Sites Profissionais</h3>
-      <p>
-        Desenvolvimento de sites modernos, rápidos e totalmente responsivos,
-        adaptados para celular, tablet e computador.
-      </p>
-    </div>
+    <p>
+      Desenvolvido por
+      <strong>Marcos Lima</strong>
+    </p>
 
-    <div class="card">
-      <h3>Landing Pages</h3>
-      <p>
-        Páginas estratégicas focadas em conversão,
-        criadas para transformar visitantes em clientes.
-      </p>
-    </div>
+  </footer>
 
-    <div class="card">
-      <h3>Presença no Google</h3>
-      <p>
-        Estrutura otimizada para SEO, ajudando sua empresa
-        a aparecer nas pesquisas e ganhar mais visibilidade online.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="contato">
-  <h2>Vamos colocar sua empresa no digital?</h2>
-
-  <a class="btn" href="https://wa.me/5511991882423" target="_blank">
-    Solicitar Orçamento no WhatsApp
-  </a>
-</section>
-
-<footer>
-  <p>© 2026 • Todos os direitos reservados</p>
-  <p>Desenvolvido por <strong>Marcos Lima</strong></p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 
 </body>
+
 </html>
+
+
+
+
+
