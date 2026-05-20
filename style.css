@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: 'Inter', sans-serif;
 }
 
@@ -237,7 +236,7 @@ nav a:hover {
 
   justify-content: center;
 
-  gap: 60px;
+  gap: 30px;
 
   padding: 90px 24px 40px;
 
@@ -249,17 +248,17 @@ nav a:hover {
   max-width: 560px;
 }
 
-/* TITULO */
+/* TITULO PREMIUM */
 
 .logo-title {
 
-  font-size: clamp(52px, 8vw, 92px);
+  font-size: clamp(46px, 7vw, 78px);
 
   font-weight: 900;
 
   line-height: 0.95;
 
-  letter-spacing: -5px;
+  letter-spacing: -3px;
 
   margin-bottom: 24px;
 
@@ -285,7 +284,7 @@ nav a:hover {
 
   font-size: 20px;
 
-  line-height: 1.7;
+  line-height: 1.9;
 
   color: rgba(255,255,255,0.72);
 
@@ -298,23 +297,6 @@ nav a:hover {
   animation: slideRight 1.2s ease forwards;
 
   animation-delay: 0.3s;
-}
-
-.hero-destaque {
-
-  margin-top: 24px;
-
-  font-size: 17px;
-
-  color: rgba(255,255,255,0.55);
-
-  opacity: 0;
-
-  transform: translateX(120px);
-
-  animation: slideRight 1.2s ease forwards;
-
-  animation-delay: 0.6s;
 }
 
 /* CORES */
@@ -331,9 +313,7 @@ nav a:hover {
   font-weight: 700;
 }
 
-/* ========================= */
-/* CAROUSEL CORRIGIDO */
-/* ========================= */
+/* CAROUSEL */
 
 .carousel {
 
@@ -366,8 +346,6 @@ nav a:hover {
   padding: 8px;
 }
 
-/* IMAGENS */
-
 .carousel img {
 
   width: 100%;
@@ -380,8 +358,6 @@ nav a:hover {
 
   object-fit: contain;
 }
-
-/* IMAGEM ATIVA */
 
 .carousel img.active {
 
@@ -607,13 +583,6 @@ footer strong {
     margin: auto;
   }
 
-  .hero-destaque {
-
-    margin-left: auto;
-
-    margin-right: auto;
-  }
-
   .carousel {
 
     width: 100%;
@@ -664,15 +633,19 @@ footer strong {
 
   .logo-title {
 
-    font-size: 56px;
+    font-size: 48px;
+
+    line-height: 1;
+
+    letter-spacing: -2px;
   }
 
   .hero-description {
 
     font-size: 18px;
-  }
 
-  /* MOBILE */
+    line-height: 1.9;
+  }
 
   .carousel {
 
@@ -709,6 +682,7 @@ footer strong {
     font-size: 17px;
   }
 }
+
 
 
 
