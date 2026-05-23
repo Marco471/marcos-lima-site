@@ -21,13 +21,15 @@ body {
   overflow-x: hidden;
 
   position: relative;
+
+  isolation: isolate;
 }
 
 /* PALAVRAS FUNDO */
 
 .bg-words {
 
-  position: fixed;
+  position: absolute;
 
   inset: 0;
 
@@ -35,7 +37,7 @@ body {
 
   pointer-events: none;
 
-  z-index: -1;
+  z-index: 0;
 }
 
 .bg-words span {
@@ -53,6 +55,8 @@ body {
   letter-spacing: -6px;
 
   animation: moveWords 20s linear infinite;
+
+  will-change: transform;
 }
 
 .bg-words span:nth-child(1){
@@ -93,7 +97,7 @@ body::before {
 
   content: '';
 
-  position: fixed;
+  position: absolute;
 
   width: 420px;
 
@@ -103,7 +107,7 @@ body::before {
 
   border-radius: 50%;
 
-  filter: blur(120px);
+  filter: blur(60px);
 
   top: -120px;
 
@@ -116,7 +120,7 @@ body::after {
 
   content: '';
 
-  position: fixed;
+  position: absolute;
 
   width: 320px;
 
@@ -126,7 +130,7 @@ body::after {
 
   border-radius: 50%;
 
-  filter: blur(100px);
+  filter: blur(50px);
 
   bottom: -100px;
 
@@ -161,6 +165,8 @@ nav {
 
   background: rgba(255,255,255,0.04);
 
+  -webkit-backdrop-filter: blur(14px);
+
   backdrop-filter: blur(14px);
 
   border: 1px solid rgba(255,255,255,0.06);
@@ -168,6 +174,8 @@ nav {
   border-radius: 18px;
 
   z-index: 999;
+
+  backface-visibility: hidden;
 }
 
 /* LOGO */
@@ -228,7 +236,7 @@ nav a:hover {
 
 .hero {
 
-  min-height: 100vh;
+  min-height: 100svh;
 
   display: flex;
 
@@ -241,6 +249,10 @@ nav a:hover {
   padding: 90px 24px 40px;
 
   flex-wrap: wrap;
+
+  position: relative;
+
+  z-index: 2;
 }
 
 .hero-text {
@@ -267,6 +279,12 @@ nav a:hover {
   transform: translateX(120px);
 
   animation: slideRight 1s ease forwards;
+
+  will-change: transform;
+
+  backface-visibility: hidden;
+
+  -webkit-font-smoothing: antialiased;
 }
 
 .logo-title span {
@@ -297,6 +315,12 @@ nav a:hover {
   animation: slideRight 1.2s ease forwards;
 
   animation-delay: 0.3s;
+
+  will-change: transform;
+
+  backface-visibility: hidden;
+
+  -webkit-font-smoothing: antialiased;
 }
 
 /* CORES */
@@ -329,6 +353,8 @@ nav a:hover {
 
   border: 1px solid rgba(255,255,255,0.08);
 
+  -webkit-backdrop-filter: blur(10px);
+
   backdrop-filter: blur(10px);
 
   box-shadow:
@@ -344,6 +370,10 @@ nav a:hover {
   animation-delay: 0.5s;
 
   padding: 8px;
+
+  will-change: transform;
+
+  backface-visibility: hidden;
 }
 
 .carousel img {
@@ -373,6 +403,10 @@ section {
   max-width: 1180px;
 
   margin: auto;
+
+  position: relative;
+
+  z-index: 2;
 }
 
 section h2 {
@@ -424,11 +458,15 @@ section p {
 
   padding: 32px;
 
+  -webkit-backdrop-filter: blur(14px);
+
   backdrop-filter: blur(14px);
 
   transition: 0.4s ease;
 
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+
+  backface-visibility: hidden;
 }
 
 .card:hover {
@@ -512,6 +550,10 @@ footer {
   color: rgba(255,255,255,0.45);
 
   border-top: 1px solid rgba(255,255,255,0.05);
+
+  position: relative;
+
+  z-index: 2;
 }
 
 footer strong {
@@ -558,6 +600,10 @@ footer strong {
   transform: translateX(120px);
 
   transition: 1s ease;
+
+  will-change: transform;
+
+  backface-visibility: hidden;
 }
 
 .reveal.active {
@@ -611,6 +657,8 @@ footer strong {
     right: 18px;
 
     background: rgba(15,23,42,0.95);
+
+    -webkit-backdrop-filter: blur(20px);
 
     backdrop-filter: blur(20px);
 
